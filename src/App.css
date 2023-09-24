@@ -28,6 +28,128 @@
   color: #61dafb;
 }
 
+#root {
+  display: flex;
+}
+
+#rootContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#headerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerMenu ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+#headerMenu li{
+  margin: 1rem;
+}
+
+#headerMenu a{
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Landing section */
+#landingSection {
+  background-color: #495E57;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#landingText {
+  margin: 20px;
+}
+
+#landingSection img {
+  border-radius: 16px;
+}
+
+#landingSection .mainTitle {
+  color: #F4CE14;
+  font-size: 2.8rem;
+}
+
+#landingSection .secondaryTitle, #landingSection .secondaryText {
+  color: #FFFFFF;
+}
+
+#landingSection .secondaryText {
+  max-width: 370px;
+}
+
+/* Landing section */
+
+
+.primaryButton {
+  background-color: #F4CE14;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+
+/* Specials */
+
+#specials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#specials .card:nth-child(even) {
+  margin: 0 20px;
+}
+
+/* Specials */
+
+/* About */
+
+#aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+
+#aboutText .secondaryText {
+  max-width: 370px;
+}
+
+#aboutImageWrapper1 {
+  position: relative;
+  top: 50px
+}
+
+#aboutImageWrapper2 {
+  position: absolute;
+  top: 5px;
+  right: 380px;
+}
+
+/* Footer */
+
+#mainFooter {
+  display: flex;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
