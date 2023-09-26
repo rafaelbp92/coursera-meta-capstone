@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/Homepage";
@@ -11,7 +11,7 @@ import BookingConfirmation from "./components/booking/BookingConfirmation";
 function App() {
   return (
     <main id="rootContainer">
-      <Nav />
+      <Header />
       <Routes>
         <Route  path="/" element={<HomePage />}/>
         <Route  path="/about" element={<NotAvailable />}/>

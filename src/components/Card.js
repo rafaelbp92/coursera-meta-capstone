@@ -1,7 +1,7 @@
 const Card = ({ image, title, price, text, action }) => {
   return (
     <article className="card" style={styles.card}>
-      <img src={image} alt="card" width={270} height={175} style={styles.cardImage}/>
+      <img src={image} alt="card" style={styles.cardImage}/>
       <div style={styles.cardContainer}>
         <header style={styles.cardHeader}>
           <h4>{title}</h4>
@@ -17,16 +17,18 @@ export default Card;
 
 const styles = {
   card: {
-    maxWidth: 270,
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#EDEFEE",
     borderRadius: "1rem",
-    minHeight: 450
+    flex: "0 1 25%"
   },
   cardImage: {
     borderTopLeftRadius: "1rem",
-    borderTopRightRadius: "1rem"
+    borderTopRightRadius: "1rem",
+    width: "100%",
+    height: "12.5rem",
+    objectFit: "cover"
   },
   cardContainer: {
     padding: "20px"

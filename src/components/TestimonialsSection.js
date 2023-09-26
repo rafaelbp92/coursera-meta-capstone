@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
   return (
     <section style={styles.container}>
       <h2 style={styles.testimonialHeader}>Testimonials</h2>
-      <div style={styles.testiminalsContainer}>
+      <div id="testimonialsContainer" style={styles.testiminalsContainer}>
         {TESTIMONIALS.map((testimonial) => {
           return (
             <TestimonialCard
@@ -60,16 +60,17 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "#D9D9D9",
     padding: "5rem 0",
   },
   testimonialHeader: {
     marginBottom: "5rem",
-    color: "#333333"
+    color: "#333333",
   },
   testiminalsContainer: {
     display: "flex",
-    columnGap: "1rem"
+    columnGap: "1rem",
+    flexWrap: "wrap",
+    justifyContent: "space-evenly",
   }
 };
