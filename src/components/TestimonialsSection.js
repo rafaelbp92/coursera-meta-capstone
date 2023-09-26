@@ -1,32 +1,33 @@
 import TestimonialCard from "./TestimonialCard";
+import {Ratings} from "../utils/ratingsEnum";
 
 const TESTIMONIALS = [
   {
     key: 1,
     name: "Jane Doe",
     text: "The best experience in online restaurant ever",
-    rating: "Great",
+    rating: Ratings.Great,
     image: require("../assets/person_1.jpeg"),
   },
   {
     key: 2,
     name: "John Smith",
     text: "Excellent service and delicious food!",
-    rating: "Excellent",
+    rating: Ratings.Excellent,
     image: require("../assets/person_2.jpeg"),
   },
   {
     key: 3,
     name: "Alice Johnson",
     text: "Highly recommended! I'll be coming back for more.",
-    rating: "Outstanding",
+    rating: Ratings.Great,
     image: require("../assets/person_3.jpeg"),
   },
   {
     key: 4,
-    name: "Michael Brown",
+    name: "Milena Brown",
     text: "The restaurant exceeded my expectations.",
-    rating: "Good",
+    rating: Ratings.Excellent,
     image: require("../assets/person_4.jpeg"),
   },
 ];

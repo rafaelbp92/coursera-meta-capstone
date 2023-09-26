@@ -10,19 +10,19 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="menu">Menu</a>
+          <Link href="/menu">Menu</Link>
         </li>
         <li>
-          <a href="reservations">Reservations</a>
+          <Link href="/reservations">Reservations</Link>
         </li>
         <li>
-          <a href="orderOnline">Order Online</a>
+          <Link href="/order-online">Order Online</Link>
         </li>
         <li>
-          <a href="login">Login</a>
+          <Link href="/login">Login</Link>
         </li>
       </ul>
     </nav>

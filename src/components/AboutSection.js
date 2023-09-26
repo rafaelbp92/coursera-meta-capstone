@@ -1,5 +1,4 @@
-import image1 from "../assets/restaurant chef B.jpg";
-import image2 from "../assets/Mario and Adrian b.jpg";
+import image from "../assets/Mario and Adrian b.jpg";
 
 const AboutSection = () => {
   return (
@@ -16,12 +15,7 @@ const AboutSection = () => {
         </p>
       </div>
 
-        <div id="aboutImageWrapper1">
-          <img alt="restaurant-staf" src={image1} width={272} height={336} />
-        </div>
-        <div id="aboutImageWrapper2">
-          <img alt="restaurant-chef" src={image2} width={272} height={336} />
-        </div>
+      <img id="aboutImage" alt="restaurant-chef" src={image} width={272} height={336} />
 
     </section>
   );

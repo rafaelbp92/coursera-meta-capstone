@@ -1,16 +1,39 @@
+import {
+  faStar,
+  faStarHalfStroke,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faStar as faStarRegular,
+} from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const ratingLevels = { 0: faStarRegular, 0.5: faStarHalfStroke, 1: faStar };
+
 const TestimonialCard = ({ rating, image, name, text }) => {
   return (
     <article style={styles.container} className="testimonialCard">
-      <h4>{rating}</h4>
+      <span style={styles.rating}>
+        {rating.map((ratingPoint, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={ratingLevels[ratingPoint]}
+            size="xs"
+          />
+        ))}
+      </span>
       <div style={styles.personContainer}>
         <div>
-          <img src={image} alt="testimonial" width={45} height={45} />
+          <img
+            src={image}
+            alt="testimonial"
+            style={styles.image}
+          />
         </div>
         <div>
           <h4 style={styles.personName}>{name}</h4>
         </div>
       </div>
-      <div>{text}</div>
+      <blockquote style={styles.quote}>"{text}"</blockquote>
     </article>
   );
 };
@@ -27,6 +50,8 @@ const styles = {
     flexDirection: "column",
     backgroundColor: "#FFFFFF",
     padding: "1rem",
+    borderRadius:"1rem",
+    alignItems: "center"
   },
   personContainer: {
     display: "flex",
@@ -41,4 +66,16 @@ const styles = {
     width: "8rem",
     marginLeft: "1rem",
   },
+  image: {
+    objectFit: "cover",
+    width: "4rem",
+    minWidth: "4rem",
+    borderRadius: "1rem"
+  },
+  rating: {
+    color: "#495E57"
+  },
+  quote: {
+    fontStyle: "italic"
+  }
 };

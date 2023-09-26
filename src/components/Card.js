@@ -21,12 +21,12 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#EDEFEE",
-    borderRadius: 5,
+    borderRadius: "1rem",
     minHeight: 450
   },
   cardImage: {
-    borderTopLeftRadius: "5px",
-    borderTopRightRadius: "5px"
+    borderTopLeftRadius: "1rem",
+    borderTopRightRadius: "1rem"
   },
   cardContainer: {
     padding: "20px"
