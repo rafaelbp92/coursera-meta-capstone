@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormField from './FormField';
+import PrimaryButton from '../PrimaryButton';
 
 const BookingForm = ({
   availableTimes,
@@ -123,13 +124,12 @@ const BookingForm = ({
           )}
         </select>
       </FormField>
-      <button 
-        className="button-primary" 
+      <PrimaryButton 
         type="submit" 
         disabled={!areAllFieldsValid()}
+        label="Make your reservation"
       >
-        Make your reservation
-      </button>
+      </PrimaryButton>
     </form>
   );
 };

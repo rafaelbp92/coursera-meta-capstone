@@ -40,16 +40,16 @@ const Footer = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link href="/menu">Menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <Link href="/reservations">Reservations</Link>
+            <Link to="/reservations">Reservations</Link>
           </li>
           <li>
-            <Link href="/order-online">Order Online</Link>
+            <Link to="/order-online">Order Online</Link>
           </li>
           <li>
-            <Link href="/login">Login</Link>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </nav>

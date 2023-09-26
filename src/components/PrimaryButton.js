@@ -1,5 +1,9 @@
-const PrimaryButton = ({label, action}) => {
-    return <button className="primaryButton" onClick={action}>{label}</button>
-}
+const PrimaryButton = ({ label, action, type, disabled }) => {
+  return (
+    <button className="primaryButton" onClick={action} type={type} disabled={disabled}>
+      {label}
+    </button>
+  );
+};
 
 export default PrimaryButton;
