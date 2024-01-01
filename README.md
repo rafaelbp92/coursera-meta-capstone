@@ -1,3 +1,17 @@
+# Litle Lemon (Meta Frontend Developer Capstone Project)
+
+Restaurant web application developed with React
+
+Technologies applied:
+
+ - Html
+ - CSS
+ - React
+ - Figma (To design wireframes and layout)
+
+![Home page](screenshots/Screenshot_Litle_Lemon.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
