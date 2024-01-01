@@ -1,4 +1,4 @@
-# Litle Lemon (Meta Frontend Developer Capstone Project)
+# Little Lemon (Meta Frontend Developer Capstone Project)
 
 Restaurant web application developed with React
 
